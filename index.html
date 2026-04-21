@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2Z Advertising | From Concept to Creation</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --brand-blue: #005696;
+            --brand-red: #D2232A;
+            --brand-gold: #C59239;
+            --brand-dark: #2D1A16;
+        }
+        body { font-family: 'Poppins', sans-serif; }
+        
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .hero-img-grid img {
+            transition: transform 0.5s ease;
+        }
+        .hero-img-grid img:hover {
+            transform: translateY(-10px);
+        }
+        
+        .text-brand-blue { color: var(--brand-blue); }
+        .text-brand-red { color: var(--brand-red); }
+        .text-brand-gold { color: var(--brand-gold); }
+        .bg-brand-blue { background-color: var(--brand-blue); }
+        .bg-brand-red { background-color: var(--brand-red); }
+        .bg-brand-gold { background-color: var(--brand-gold); }
+        .border-brand-gold { border-color: var(--brand-gold); }
+
+          /* Hide scrollbar but keep functionality */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    
+    .dot.active {
+        width: 2rem;
+        background-color: var(--brand-blue);
+    }
+
+    </style>
+</head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo Image Placeholder -->
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="a2zlogo.png" alt="A2Z Logo" class="h-16 w-auto">
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-10 items-center">
+                    <a href="#home" class="text-gray-600 hover:text-[var(--brand-blue)] font-medium text-sm transition-colors">Home</a>
+                    <a href="#services" class="text-gray-600 hover:text-[var(--brand-blue)] font-medium text-sm transition-colors">Services</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-[var(--brand-blue)] font-medium text-sm transition-colors">Portfolio</a>
+                    <a href="#about" class="text-gray-600 hover:text-[var(--brand-blue)] font-medium text-sm transition-colors">About</a>
+                </div>
+
+                <!-- Right Buttons -->
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="https://wa.me/yournumber" class="text-sm font-semibold text-brand-blue hover:text-brand-red transition-colors flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg text-green-600"></i> WhatsApp
+                    </a>
+                    <a href="#contact" class="bg-brand-blue text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-900 transition-all shadow-md">
+                        Enquiry Now
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700"><i class="fa-solid fa-bars-staggered text-2xl"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Updated with Brand Colors) -->
+    <section class="pt-24 pb-8 md:pt-32 md:pb-10 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 text-center">
+            
+            <!-- Top Badge -->
+            <div class="inline-flex items-center gap-2 bg-gray-50 px-4 py-1.5 rounded-full mb-8 border border-gray-200">
+                <span class="bg-brand-red text-[10px] text-white px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">Concept to Creation</span>
+                <span class="text-xs font-medium text-gray-600">Top-Tier Advertising Solutions</span>
+                <i class="fa-solid fa-chevron-right text-[10px] text-brand-blue"></i>
+            </div>
+
+            <!-- Main Heading with Blue & Gold accents -->
+            <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-4 md:mb-6 px-2">
+                Your Brand <span class="text-brand-blue">Redefined</span>,<br>
+                <span class="text-brand-gold">Branding Made Easy!</span>
+            </h1>
+
+            <p class="text-gray-500 text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl mx-auto mb-8 md:mb-10 leading-relaxed px-2">
+                Elevate your presence with A2Z Advertising. From premium stationery to high-impact signage, we craft excellence.
+            </p>
+
+            <!-- Main CTA with Blue -->
+            <div class="flex justify-center mb-16">
+                <a href="#contact" class="group bg-brand-blue text-white px-8 py-4 rounded-full font-semibold flex items-center gap-3 hover:bg-blue-900 transition-all shadow-xl hover:scale-105">
+                    Start Your Project 
+                    <div class="bg-white/20 rounded-full p-1 group-hover:translate-x-1 transition-transform">
+                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Categories Bar -->
+            <div class="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 overflow-x-auto no-scrollbar pb-8 md:pb-12 text-gray-400 font-medium text-xs sm:text-sm px-2">
+                <div class="flex items-center gap-2 cursor-pointer hover:text-brand-blue transition-colors shrink-0">
+                    <i class="fa-solid fa-pen-nib text-brand-blue"></i> Pens
+                </div>
+                <div class="flex items-center gap-2 cursor-pointer hover:text-brand-red transition-colors shrink-0">
+                    <i class="fa-solid fa-shirt text-brand-red"></i> T-Shirts
+                </div>
+                <div class="flex items-center gap-2 cursor-pointer text-brand-gold border-b-2 border-brand-gold pb-1 shrink-0 font-bold">
+                    <i class="fa-solid fa-book-open"></i> Diaries
+                </div>
+                <div class="flex items-center gap-2 cursor-pointer hover:text-brand-blue transition-colors shrink-0">
+                    <i class="fa-solid fa-mug-hot"></i> Mugs
+                </div>
+                <div class="flex items-center gap-2 cursor-pointer hover:text-brand-red transition-colors shrink-0">
+                    <i class="fa-solid fa-sign-hanging"></i> Signage
+                </div>
+            </div>
+
+            <!-- Image Strip with Golden borders on hover -->
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-2 sm:gap-3 md:gap-4 mt-4 md:mt-6 hero-img-grid px-2">
+                <div class="h-32 sm:h-40 md:h-48 lg:h-64 rounded-2xl sm:rounded-2xl md:rounded-[2.5rem] overflow-hidden shadow-lg border-2 border-transparent hover:border-brand-gold">
+                    <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80" class="w-full h-full object-cover" alt="Branding 1">
+                </div>
+                <div class="h-32 sm:h-40 md:h-48 lg:h-64 rounded-2xl sm:rounded-2xl md:rounded-[2.5rem] overflow-hidden shadow-lg mt-4 sm:mt-6 md:mt-8 border-2 border-transparent hover:border-brand-blue">
+                    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&q=80" class="w-full h-full object-cover" alt="Branding 2">
+                </div>
+                <div class="h-32 sm:h-40 md:h-48 lg:h-64 rounded-2xl sm:rounded-2xl md:rounded-[2.5rem] overflow-hidden shadow-lg border-2 border-transparent hover:border-brand-red">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80" class="w-full h-full object-cover" alt="Branding 3">
+                </div>
+                <div class="h-32 sm:h-40 md:h-48 lg:h-64 rounded-2xl sm:rounded-2xl md:rounded-[2.5rem] overflow-hidden shadow-lg mt-4 sm:mt-6 md:mt-8 border-2 border-transparent hover:border-brand-gold">
+                    <img src="https://images.unsplash.com/photo-1563906267088-b029e7101114?auto=format&fit=crop&q=80" class="w-full h-full object-cover" alt="Branding 4">
+                </div>
+                <div class="h-32 sm:h-40 md:h-48 lg:h-64 rounded-2xl sm:rounded-2xl md:rounded-[2.5rem] overflow-hidden shadow-lg hidden md:block border-2 border-transparent hover:border-brand-blue">
+                    <img src="https://images.unsplash.com/photo-1563906267088-b029e7101114?auto=format&fit=crop&q=80" class="w-full h-full object-cover" alt="Branding 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+               <!-- Services Section -->
+<section id="services" class="py-16 md:py-24 bg-gray-50 overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12 md:mb-16 px-4">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Our <span class="text-brand-blue">Branding</span> Solutions</h2>
+            <div class="w-20 h-1.5 bg-brand-gold mx-auto rounded-full"></div>
+            <p class="mt-4 md:mt-6 text-gray-500 text-sm md:text-base">Swipe or scroll to explore our premium services</p>
+        </div>
+
+        <!-- Scroll Container -->
+        <div id="services-scroll" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory px-4 sm:px-6 pb-8 md:pb-10 no-scrollbar gap-4 md:gap-6">
+            
+            <!-- Card 1: Custom Printing (Blue Theme) -->
+            <div class="p-8 bg-white rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-xl hover:border-brand-blue transition-all group flex-shrink-0 w-[85%] md:w-[400px] snap-center hover:-translate-y-2 duration-300">
+                <div class="w-16 h-16 bg-blue-50 text-brand-blue rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-all">
+                    <i class="fa-solid fa-pen-nib text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Custom Printing</h3>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">High-quality logo printing on pens, diaries, and office accessories with precision finishing.</p>
+                <div class="flex items-center text-brand-blue font-semibold text-xs uppercase tracking-wider mb-6">
+                    <span class="bg-blue-50 px-3 py-1 rounded-full">Metal & Plastic</span>
+                </div>
+                <a href="#contact" class="inline-flex items-center text-brand-blue font-bold group">
+                    Get Quote <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                </a>
+            </div>
+
+            <!-- Card 2: Apparel (Red Theme) -->
+            <div class="p-8 bg-white rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-xl hover:border-brand-red transition-all group flex-shrink-0 w-[85%] md:w-[400px] snap-center hover:-translate-y-2 duration-300">
+                <div class="w-16 h-16 bg-red-50 text-brand-red rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-all">
+                    <i class="fa-solid fa-shirt text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Corporate Apparel</h3>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">Premium T-shirts and uniforms with durable embroidery and advanced digital printing techniques.</p>
+                <div class="flex items-center text-brand-red font-semibold text-xs uppercase tracking-wider mb-6">
+                    <span class="bg-red-50 px-3 py-1 rounded-full">Screen & Digital</span>
+                </div>
+                <a href="#contact" class="inline-flex items-center text-brand-red font-bold group">
+                    Get Quote <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                </a>
+            </div>
+
+            <!-- Card 3: Signage (Gold Theme) -->
+            <div class="p-8 bg-white rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-xl hover:border-brand-gold transition-all group flex-shrink-0 w-[85%] md:w-[400px] snap-center hover:-translate-y-2 duration-300">
+                <div class="w-16 h-16 bg-yellow-50 text-brand-gold rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-gold group-hover:text-white transition-all">
+                    <i class="fa-solid fa-sign-hanging text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Signage & Display</h3>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">Outdoor LED signboards and high-impact banners that make your brand impossible to miss.</p>
+                <div class="flex items-center text-brand-gold font-semibold text-xs uppercase tracking-wider mb-6">
+                    <span class="bg-yellow-50 px-3 py-1 rounded-full">LED & 3D Signs</span>
+                </div>
+                <a href="#contact" class="inline-flex items-center text-brand-gold font-bold group">
+                    Get Quote <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                </a>
+            </div>
+
+            <!-- Card 4: Gifts (Blue Theme) -->
+            <div class="p-8 bg-white rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-xl hover:border-brand-blue transition-all group flex-shrink-0 w-[85%] md:w-[400px] snap-center hover:-translate-y-2 duration-300">
+                <div class="w-16 h-16 bg-blue-50 text-brand-blue rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-all">
+                    <i class="fa-solid fa-gift text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Promotional Gifts</h3>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">Mugs, keychains, and premium gift boxes curated perfectly for your corporate clients.</p>
+                <div class="flex items-center text-brand-blue font-semibold text-xs uppercase tracking-wider mb-6">
+                    <span class="bg-blue-50 px-3 py-1 rounded-full">Drinkware & Kits</span>
+                </div>
+                <a href="#contact" class="inline-flex items-center text-brand-blue font-bold group">
+                    Get Quote <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicators/Dots -->
+        <div class="flex justify-center items-center gap-2 md:gap-3 mt-6 md:mt-8 px-4">
+            <button onclick="scrollToCard(0)" class="dot w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-brand-blue transition-all duration-300 hover:scale-150" aria-label="Service 1"></button>
+            <button onclick="scrollToCard(1)" class="dot w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-gray-300 transition-all duration-300 hover:scale-150" aria-label="Service 2"></button>
+            <button onclick="scrollToCard(2)" class="dot w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-gray-300 transition-all duration-300 hover:scale-150" aria-label="Service 3"></button>
+        </div>
+    </div>
+</section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 md:py-20 bg-brand-blue text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6 md:mb-8">What Makes <span class="text-brand-gold">A2Z</span> Different?</h2>
+                    <div class="space-y-4 md:space-y-6">
+                        <div class="flex gap-3 md:gap-4">
+                            <i class="fa-solid fa-circle-check text-brand-gold text-xl md:text-2xl flex-shrink-0 mt-1"></i>
+                            <p class="text-blue-100 text-sm md:text-base">Premium Materials from concept to the final creation.</p>
+                        </div>
+                        <div class="flex gap-3 md:gap-4">
+                            <i class="fa-solid fa-circle-check text-brand-gold text-xl md:text-2xl flex-shrink-0 mt-1"></i>
+                            <p class="text-blue-100 text-sm md:text-base">Fast Delivery that respects your business deadlines.</p>
+                        </div>
+                        <div class="flex gap-3 md:gap-4">
+                            <i class="fa-solid fa-circle-check text-brand-gold text-xl md:text-2xl flex-shrink-0 mt-1"></i>
+                            <p class="text-blue-100 text-sm md:text-base">Affordable Pricing without compromising on quality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-6 md:p-10 rounded-3xl md:rounded-[3rem] border border-white/20">
+                    <div class="grid grid-cols-2 gap-6 md:gap-8 text-center">
+                        <div>
+                            <div class="text-3xl md:text-4xl font-bold text-brand-gold mb-2">500+</div>
+                            <p class="text-xs md:text-sm text-blue-100 uppercase tracking-widest font-semibold">Clients</p>
+                        </div>
+                        <div>
+                            <div class="text-3xl md:text-4xl font-bold text-brand-gold mb-2">10+</div>
+                            <p class="text-xs md:text-sm text-blue-100 uppercase tracking-widest font-semibold">Years Exp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative red accent -->
+        <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-brand-red rounded-full opacity-20"></div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">What Our <span class="text-brand-blue">Clients Say</span></h2>
+                <div class="w-20 h-1.5 bg-brand-gold mx-auto rounded-full mb-4 md:mb-6"></div>
+                <p class="text-gray-600 text-sm md:text-base lg:text-lg max-w-2xl mx-auto px-4">Don't just take our word for it. Here's what our satisfied clients have to say about our branding solutions.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 md:gap-8 px-4 md:px-0">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-xl transition-all group">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-600 mb-6 italic leading-relaxed">
+                        "A2Z Advertising transformed our brand completely. The quality of their custom pens and signage exceeded our expectations. Their attention to detail and fast turnaround time made the entire process seamless."
+                    </blockquote>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=60&h=60" alt="Ahmed Khan" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Ahmed Khan</h4>
+                            <p class="text-sm text-gray-500">CEO, Tech Solutions Inc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-xl transition-all group">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-600 mb-6 italic leading-relaxed">
+                        "The team uniforms they created for our company event were outstanding. The embroidery quality and color matching were perfect. Our employees loved them and it really boosted our brand image."
+                    </blockquote>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&q=80&w=60&h=60" alt="Sara Ahmed" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Sara Ahmed</h4>
+                            <p class="text-sm text-gray-500">Marketing Director, Fashion Hub</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-xl transition-all group">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-600 mb-6 italic leading-relaxed">
+                        "Working with A2Z was a game-changer for our business. Their LED signboards and banners have significantly increased our visibility. The installation was professional and the quality is top-notch."
+                    </blockquote>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=60&h=60" alt="Mohammad Ali" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Mohammad Ali</h4>
+                            <p class="text-sm text-gray-500">Founder, Creative Agency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="mt-12 md:mt-16 text-center px-4">
+                <div class="inline-flex flex-col md:flex-row items-center gap-4 md:gap-8 bg-gray-50 px-4 md:px-8 py-6 rounded-2xl border border-gray-200 w-full md:w-auto">
+                    <div class="text-center flex-1 md:flex-none">
+                        <div class="text-2xl md:text-3xl font-bold text-brand-blue mb-1">500+</div>
+                        <p class="text-xs md:text-sm text-gray-600">Happy Clients</p>
+                    </div>
+                    <div class="hidden md:block w-px h-12 bg-gray-300"></div>
+                    <div class="text-center flex-1 md:flex-none">
+                        <div class="text-2xl md:text-3xl font-bold text-brand-red mb-1">15K+</div>
+                        <p class="text-xs md:text-sm text-gray-600">Items Delivered</p>
+                    </div>
+                    <div class="hidden md:block w-px h-12 bg-gray-300"></div>
+                    <div class="text-center flex-1 md:flex-none">
+                        <div class="text-2xl md:text-3xl font-bold text-brand-gold mb-1">4.9★</div>
+                        <p class="text-xs md:text-sm text-gray-600">Average Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Get in <span class="text-brand-blue">Touch</span></h2>
+                <div class="w-20 h-1.5 bg-brand-gold mx-auto rounded-full mb-4 md:mb-6"></div>
+                <p class="text-gray-600 text-sm md:text-base lg:text-lg max-w-2xl mx-auto px-4">Ready to bring your brand to life? Let's discuss your project and create something amazing together.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 md:gap-16">
+                <!-- Contact Form -->
+                <div class="bg-white p-6 md:p-8 lg:p-10 rounded-3xl shadow-xl border border-gray-100">
+                    <h3 class="text-xl md:text-2xl font-bold mb-6 text-gray-900">Send us a Message</h3>
+                    <form class="space-y-4 md:space-y-6">
+                        <div class="grid md:grid-cols-2 gap-4 md:gap-6">
+                            <div>
+                                <label class="block text-xs md:text-sm font-semibold text-gray-700 mb-2">Full Name</label>
+                                <input type="text" placeholder="Your Name" class="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg md:rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs md:text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+                                <input type="email" placeholder="your@email.com" class="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg md:rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all text-sm">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs md:text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" placeholder="+1 (234) 567-8900" class="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg md:rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs md:text-sm font-semibold text-gray-700 mb-2">Service Needed</label>
+                            <select class="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg md:rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all appearance-none bg-white text-sm">
+                                <option>Select a service</option>
+                                <option>Custom Printing</option>
+                                <option>Corporate Apparel</option>
+                                <option>Signage & Display</option>
+                                <option>Branded Stationery</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs md:text-sm font-semibold text-gray-700 mb-2">Project Details</label>
+                            <textarea rows="3" placeholder="Tell us about your project..." class="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg md:rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all resize-none text-sm"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-blue text-white py-3 md:py-4 rounded-lg md:rounded-xl font-bold hover:bg-blue-900 transition-all shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2 text-sm md:text-base">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Map -->
+                <div class="space-y-6 md:space-y-8">
+                    <!-- Contact Cards -->
+                    <div class="grid gap-4 md:gap-6">
+                        <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all group">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center group-hover:bg-brand-blue group-hover:text-white transition-all">
+                                    <i class="fa-solid fa-phone text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Call Us</h4>
+                                    <p class="text-gray-600">+1 (234) 567-8900</p>
+                                    <p class="text-sm text-gray-500">Mon-Fri: 9AM-6PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all group">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-red-50 text-brand-red rounded-xl flex items-center justify-center group-hover:bg-brand-red group-hover:text-white transition-all">
+                                    <i class="fa-solid fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Email Us</h4>
+                                    <p class="text-gray-600">hello@a2z.com</p>
+                                    <p class="text-sm text-gray-500">We'll respond within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all group">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-yellow-50 text-brand-gold rounded-xl flex items-center justify-center group-hover:bg-brand-gold group-hover:text-white transition-all">
+                                    <i class="fa-solid fa-location-dot text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Visit Us</h4>
+                                    <p class="text-gray-600">123 Creative Street<br>Branding Hub, NY 10001</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="bg-gradient-to-r from-brand-blue to-blue-700 p-6 md:p-8 rounded-2xl md:rounded-3xl text-white">
+                        <h4 class="text-lg md:text-xl font-bold mb-2 md:mb-4">Need a Quick Quote?</h4>
+                        <p class="text-blue-100 mb-4 md:mb-6 text-sm md:text-base">Get instant pricing for your project via WhatsApp</p>
+                        <a href="https://wa.me/yournumber" class="inline-flex items-center gap-2 md:gap-3 bg-green-500 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg md:rounded-xl font-semibold hover:bg-green-600 transition-all shadow-lg hover:scale-105 text-sm md:text-base">
+                            <i class="fa-brands fa-whatsapp text-lg md:text-xl"></i> WhatsApp Now
+                        </a>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                        <h4 class="font-bold text-gray-900 mb-4">Follow Us</h4>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-brand-blue hover:text-white transition-all">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-brand-red hover:text-white transition-all">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-brand-blue hover:text-white transition-all">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 md:pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 md:px-6">
+            <!-- Main Footer Content -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12">
+                <!-- Company Info -->
+                <div class="sm:col-span-2 md:col-span-1">
+                    <div class="flex items-center mb-4 md:mb-6">
+                        <img src="a2zlogo.png" alt="A2Z Logo" class="h-12 md:h-16 w-auto brightness-0 invert">
+                    </div>
+                    <p class="text-gray-300 mb-4 md:mb-6 leading-relaxed text-xs md:text-sm">
+                        Your trusted partner for premium branding and advertising solutions. From concept to creation, we bring your vision to life.
+                    </p>
+                    <div class="flex gap-3 md:gap-4">
+                        <a href="#" class="w-8 md:w-10 h-8 md:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-blue transition-all text-xs md:text-base">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-8 md:w-10 h-8 md:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-red transition-all text-xs md:text-base">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-8 md:w-10 h-8 md:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-blue transition-all text-xs md:text-base">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-8 md:w-10 h-8 md:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-500 transition-all text-xs md:text-base">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-base md:text-lg font-bold mb-4 md:mb-6 text-white">Quick Links</h4>
+                    <ul class="space-y-2 md:space-y-3">
+                        <li><a href="#home" class="text-gray-300 hover:text-brand-blue transition-colors text-xs md:text-sm">Home</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-brand-blue transition-colors text-xs md:text-sm">Our Services</a></li>
+                        <li><a href="#portfolio" class="text-gray-300 hover:text-brand-blue transition-colors text-xs md:text-sm">Portfolio</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-brand-blue transition-colors text-xs md:text-sm">About Us</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-brand-blue transition-colors text-xs md:text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-base md:text-lg font-bold mb-4 md:mb-6 text-white">Our Services</h4>
+                    <ul class="space-y-2 md:space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-brand-gold transition-colors text-xs md:text-sm">Custom Printing</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-brand-gold transition-colors text-xs md:text-sm">Corporate Apparel</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-brand-gold transition-colors text-xs md:text-sm">Signage & Display</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-brand-gold transition-colors text-xs md:text-sm">Branded Stationery</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-brand-gold transition-colors text-xs md:text-sm">LED Signboards</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Newsletter -->
+                <div>
+                    <h4 class="text-base md:text-lg font-bold mb-4 md:mb-6 text-white">Get In Touch</h4>
+                    <div class="space-y-2 md:space-y-4 mb-4 md:mb-6">
+                        <div class="flex items-center gap-2 md:gap-3">
+                            <i class="fa-solid fa-phone text-brand-blue text-xs md:text-sm flex-shrink-0"></i>
+                            <span class="text-gray-300 text-xs md:text-sm">+1 (234) 567-8900</span>
+                        </div>
+                        <div class="flex items-center gap-2 md:gap-3">
+                            <i class="fa-solid fa-envelope text-brand-red text-xs md:text-sm flex-shrink-0"></i>
+                            <span class="text-gray-300 text-xs md:text-sm">hello@a2z.com</span>
+                        </div>
+                        <div class="flex items-center gap-2 md:gap-3">
+                            <i class="fa-solid fa-location-dot text-brand-gold text-xs md:text-sm flex-shrink-0"></i>
+                            <span class="text-gray-300 text-xs md:text-sm">123 Creative Street, NY</span>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div>
+                        <h5 class="font-semibold mb-2 md:mb-3 text-white text-sm">Newsletter</h5>
+                        <div class="flex gap-1 md:gap-2">
+                            <input type="email" placeholder="Your email" class="flex-1 px-2 md:px-3 py-1.5 md:py-2 bg-gray-800 border border-gray-700 rounded text-white placeholder-gray-400 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none text-xs md:text-sm">
+                            <button class="bg-brand-blue text-white px-3 md:px-4 py-1.5 md:py-2 rounded hover:bg-blue-700 transition-all">
+                                <i class="fa-solid fa-arrow-right text-xs md:text-sm"></i>
+                            </button>
+                        </div>
+                        <p class="text-xs text-gray-400 mt-1.5 md:mt-2">Get updates on new services & offers</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-6 md:pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 text-center md:text-left">
+                    <div class="text-gray-400 text-xs md:text-sm">
+                        &copy; 2026 A2Z Advertising Solutions. All rights reserved.
+                    </div>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-3 md:gap-6 text-xs md:text-sm text-gray-400">
+                        <a href="#" class="hover:text-brand-blue transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-brand-blue transition-colors">Terms of Service</a>
+                        <a href="#" class="hover:text-brand-blue transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="flex flex-wrap justify-center items-center gap-4 md:gap-8 mt-6 md:mt-8 pt-6 md:pt-8 border-t border-gray-800">
+                    <div class="flex items-center gap-1.5 md:gap-2 text-gray-400 text-xs md:text-sm">
+                        <i class="fa-solid fa-shield-alt text-brand-blue text-sm md:text-base"></i>
+                        <span>Secure Payments</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 md:gap-2 text-gray-400 text-xs md:text-sm">
+                        <i class="fa-solid fa-truck text-brand-red text-sm md:text-base"></i>
+                        <span>Fast Delivery</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 md:gap-2 text-gray-400 text-xs md:text-sm">
+                        <i class="fa-solid fa-award text-brand-gold text-sm md:text-base"></i>
+                        <span>Quality Guaranteed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth reveal on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+
+        // Enhanced Services Scroll Functionality
+        const scrollContainer = document.getElementById('services-scroll');
+        const dots = document.querySelectorAll('.dot');
+
+        // Function to scroll to specific card
+        function scrollToCard(index) {
+            const cardWidth = scrollContainer.querySelector('div').offsetWidth + 24; // width + gap
+            scrollContainer.scrollTo({
+                left: index * cardWidth,
+                behavior: 'smooth'
+            });
+        }
+
+        // Update dots on scroll
+        scrollContainer.addEventListener('scroll', () => {
+            const cardWidth = scrollContainer.querySelector('div').offsetWidth + 24;
+            const index = Math.round(scrollContainer.scrollLeft / cardWidth);
+            
+            dots.forEach((dot, i) => {
+                if (i === index) {
+                    dot.classList.add('active', 'bg-brand-blue');
+                    dot.classList.remove('bg-gray-300');
+                } else {
+                    dot.classList.remove('active', 'bg-brand-blue');
+                    dot.classList.add('bg-gray-300');
+                }
+            });
+        });
+
+        // Initialize first dot
+        dots[0].classList.add('active');
+    </script>
+</body>
+</html>
