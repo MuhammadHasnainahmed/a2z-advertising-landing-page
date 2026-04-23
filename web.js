@@ -41,3 +41,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // counter animation for stats section
 
 
+  const menuBtn = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
