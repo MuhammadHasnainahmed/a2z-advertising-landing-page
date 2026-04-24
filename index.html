@@ -251,116 +251,23 @@
 
     <section class="relative py-16 md:py-24 bg-white overflow-hidden">
 
-        <!-- soft background glow -->
-        <div class="absolute -top-40 -left-40 w-[400px] h-[400px] bg-[#005696]/10 blur-3xl rounded-full"></div>
-        <div class="absolute -bottom-40 -right-40 w-[400px] h-[400px] bg-[#C59239]/10 blur-3xl rounded-full"></div>
+    <!-- soft background glow -->
+   
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
-
-            <!-- CATEGORY NAV -->
-            <div
-                class="flex items-center justify-start md:justify-center gap-6 md:gap-10 overflow-x-auto no-scrollbar pb-6 text-sm font-medium">
-
-                <div class="flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer
-                text-[#005696] bg-[#005696]/10 shrink-0">
-                    <i class="fa-solid fa-pen-nib"></i> Pens
-                </div>
-
-                <div class="flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer
-                hover:bg-[#D2232A]/10 hover:text-[#D2232A] transition shrink-0 text-gray-500">
-                    <i class="fa-solid fa-shirt"></i> T-Shirts
-                </div>
-
-                <div class="flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer
-                bg-[#C59239]/10 text-[#C59239] font-semibold shrink-0">
-                    <i class="fa-solid fa-book-open"></i> Diaries
-                </div>
-
-                <div class="flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer
-                hover:bg-[#005696]/10 hover:text-[#005696] transition shrink-0 text-gray-500">
-                    <i class="fa-solid fa-mug-hot"></i> Mugs
-                </div>
-
-                <div class="flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer
-                hover:bg-[#D2232A]/10 hover:text-[#D2232A] transition shrink-0 text-gray-500">
-                    <i class="fa-solid fa-sign-hanging"></i> Signage
-                </div>
-
-            </div>
-
-            <!-- IMAGE GRID -->
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 mt-6">
-
-                <!-- CARD 1 -->
-                <div class="group relative overflow-hidden rounded-3xl md:rounded-[2.5rem] aspect-[3/4]
-                shadow-lg hover:shadow-2xl transition duration-500">
-
-                    <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80"
-                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition">
-                    </div>
-
-                </div>
-
-                <!-- CARD 2 -->
-                <div class="group relative overflow-hidden rounded-3xl md:rounded-[2.5rem] aspect-[3/4]
-                shadow-lg hover:shadow-2xl transition duration-500 md:translate-y-6">
-
-                    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&q=80"
-                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-[#005696]/30 to-transparent opacity-0 group-hover:opacity-100 transition">
-                    </div>
-
-                </div>
-
-                <!-- CARD 3 -->
-                <div class="group relative overflow-hidden rounded-3xl md:rounded-[2.5rem] aspect-[3/4]
-                shadow-lg hover:shadow-2xl transition duration-500">
-
-                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80"
-                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-[#D2232A]/30 to-transparent opacity-0 group-hover:opacity-100 transition">
-                    </div>
-
-                </div>
-
-                <!-- CARD 4 -->
-                <div class="group relative overflow-hidden rounded-3xl md:rounded-[2.5rem] aspect-[3/4]
-                shadow-lg hover:shadow-2xl transition duration-500 md:translate-y-6">
-
-                    <img src="https://images.unsplash.com/photo-1563906267088-b029e7101114?auto=format&fit=crop&q=80"
-                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-[#C59239]/30 to-transparent opacity-0 group-hover:opacity-100 transition">
-                    </div>
-
-                </div>
-
-                <!-- CARD 5 -->
-                <div class="group relative overflow-hidden rounded-3xl md:rounded-[2.5rem] aspect-[3/4]
-                shadow-lg hover:shadow-2xl transition duration-500 hidden md:block">
-
-                    <img src="https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80"
-                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition">
-                    </div>
-
-                </div>
-
-            </div>
-
+        <!-- 🔥 CATEGORY NAV (DYNAMIC) -->
+        <div id="categoryNav"
+            class="flex items-center justify-start md:justify-center gap-6 md:gap-10 overflow-x-auto no-scrollbar pb-6 text-sm font-medium">
         </div>
 
-    </section>
+        <!-- 🔥 IMAGE GRID (DYNAMIC) -->
+        <div id="serviceGrid"
+            class="pt-12 grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 mt-6">
+        </div>
+
+    </div>
+
+</section>
     <!-- Services Section -->
 
     <section id="services" class="relative py-16 md:py-24 overflow-hidden
