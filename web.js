@@ -88,7 +88,7 @@ const services = [
     {
         id: 5,
         name: "Awards & Medals",
-        category: "Corporate",
+        category: "Corporate Gifts Aways",
         image: "./images/electricsignage.jpg",
         color: "bg-[#D2232A]/10 text-[#D2232A]",
         icon: "fa-award"
@@ -132,6 +132,22 @@ const services = [
         image: "./images/electricsignage.jpg",
         color: "bg-[#C59239]/15 text-[#C59239]",
         icon: "fa-book"
+    },
+    {
+        id: 11,
+        name: "Stationery Design",
+        category: "Event & Catering",
+        image: "./images/electricsignage.jpg",
+        color: "bg-[#C59239]/15 text-[#C59239]",
+        icon: "fa-book"
+    }
+    , {
+        id: 12,
+        name: "Stationery Design",
+        category: "Ctu and shelf Talker",
+        image: "./images/electricsignage.jpg",
+        color: "bg-[#C59239]/15 text-[#C59239]",
+        icon: "fa-book"
     }
 ];
 const categoryNav = document.getElementById("categoryNav");
@@ -166,7 +182,7 @@ const getTabStyle = (cat) => {
         icon: "fa-brush"
     };
 
-    if (cat === "Corporate") return {
+    if (cat === "Corporate Gifts Aways") return {
         color: "bg-[#D2232A]/10 text-[#D2232A]",
         icon: "fa-award"
     };
@@ -179,6 +195,14 @@ const getTabStyle = (cat) => {
     if (cat === "Stationery") return {
         color: "bg-yellow-100 text-yellow-700",
         icon: "fa-book"
+    };
+    if (cat === "Event & Catering") return {
+        color: "bg-blue-100 text-blue-700",
+        icon: "fa-box-open"
+    };
+    if (cat === "Ctu and shelf Talker") return {
+        color: "bg-red-100 text-red-700",
+        icon: "fa-display"
     };
 
     return {
@@ -202,11 +226,11 @@ function renderCategories() {
         `;
 
         btn.className = `
-            flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer shrink-0 transition
-            ${activeCategory === cat
+    snap-start flex items-center gap-2 px-5 py-2 rounded-full whitespace-nowrap cursor-pointer flex-shrink-0 transition-all duration-300
+    ${activeCategory === cat
                 ? style.color
                 : "text-gray-500 hover:bg-gray-100"}
-        `;
+`;
 
         btn.addEventListener("click", () => {
             activeCategory = cat;
