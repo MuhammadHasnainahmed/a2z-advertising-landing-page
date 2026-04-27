@@ -285,4 +285,8 @@ function renderServices(filter) {
 // ----------------------
 // INIT
 // ----------------------
-renderAll(); 
+renderAll();
+
+
+// hero swiper
+ 
