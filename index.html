@@ -148,100 +148,90 @@
         </a>
     </div>
 
-    <!-- Hero Section (Updated with Brand Colors) -->
+   <section class="pt-32 pb-20 bg-white relative overflow-hidden">
 
-    <section class="pt-32 pb-20 bg-white relative overflow-hidden">
+  <!-- Background Overlay -->
+  <div class="absolute inset-0 bg-brand-blue/10"></div>
 
-        <!-- Background Overlay -->
-        <div
-            class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b')] bg-cover bg-center opacity-5">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center relative z-10">
+
+    <!-- LEFT CONTENT -->
+    <div>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+        Premium <span class="text-brand-blue">Corporate Gifts</span><br>
+        That Build Strong <span class="text-brand-gold">Relationships</span>
+      </h1>
+
+      <p class="text-gray-600 text-lg mb-8 max-w-xl leading-relaxed">
+        Impress your clients & employees with luxury gift boxes, custom branding, and high-end presentation that reflects your brand value.
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex flex-wrap gap-4">
+        <a href="#contact"
+          class="bg-brand-blue text-white px-8 py-4 rounded-full font-semibold shadow-xl hover:scale-105 hover:bg-blue-900 transition flex items-center gap-2">
+          Get Quote
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="#services"
+          class="px-8 py-4 rounded-full font-semibold border border-gray-300 hover:bg-gray-100 transition">
+          View Catalog
+        </a>
+      </div>
+
+      <!-- Trust Line -->
+      <p class="text-sm text-gray-400 mt-6">
+        Trusted by 500+ companies across Pakistan
+      </p>
+    </div>
+
+    <!-- RIGHT SIDE (PREMIUM CARD STYLE) -->
+    <div class="relative flex justify-center">
+
+      <!-- Glass Card -->
+      <div class="bg-white/70 backdrop-blur-xl rounded-[2.5rem] p-4 shadow-2xl border border-white/40">
+
+        <!-- Main Image -->
+        <div class="rounded-2xl overflow-hidden">
+          <img src="images/giftbox.jpg"
+               alt="Corporate Gift Box"
+               class="w-[320px] h-[380px] object-cover">
         </div>
 
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center relative z-10">
+      </div>
 
-            <!-- LEFT CONTENT -->
-            <div>
-                <h1 class="text-center  sm:text-left text-2xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6">
-                    Premium <span class="text-brand-blue">Corporate Gifts</span><br>
-                    That Build Strong <span class="text-brand-gold">Relationships</span>
-                </h1>
+      <!-- Floating Small Cards -->
+      <div class="absolute -top-10 -left-10 w-36 bg-white p-2 rounded-2xl shadow-xl rotate-[-8deg]">
+        <img src="images/signboard.jpg"
+             alt="Signage Example"
+             class="rounded-xl h-24 w-full object-cover">
+      </div>
 
-                <p class="text-center  sm:text-left text-gray-600 text-lg mb-8 max-w-xl leading-relaxed">
-                    Impress your clients & employees with luxury gift boxes, custom branding, and high-end presentation
-                    that reflects your brand value.
-                </p>
+      <div class="absolute -bottom-10 -right-10 w-36 bg-white p-2 rounded-2xl shadow-xl rotate-[8deg]">
+        <img src="images/stationery.jpg"
+             alt="Branded Stationery"
+             class="rounded-xl h-24 w-full object-cover">
+      </div>
 
-                <!-- Buttons -->
-                <div class="flex flex-wrap gap-4 justify-center sm:justify-start">
-                    <a href="#contact"
-                        class="bg-brand-blue text-white px-8 py-4 rounded-full font-semibold shadow-xl hover:scale-105 hover:bg-blue-900 transition flex items-center gap-2">
-                        Get Quote
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+    </div>
 
-                    <a href="#services"
-                        class="px-8 py-4 rounded-full font-semibold border border-gray-300 hover:bg-gray-100 transition">
-                        View Catalog
-                    </a>
-                </div>
+  </div>
 
-                <!-- Trust Line -->
-                <p class="text-sm text-gray-400 mt-6">
-                    Trusted by 500+ companies across Pakistan
-                </p>
-            </div>
+  <!-- Glow Effects -->
+  <div class="absolute top-0 right-0 w-96 h-96 bg-brand-blue opacity-10 blur-3xl rounded-full"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-gold opacity-10 blur-3xl rounded-full"></div>
 
-            <!-- RIGHT SIDE (PREMIUM CARD STYLE) -->
-            <div class="relative flex justify-center">
-
-                <!-- Glass Card -->
-                <div class="bg-white/70 backdrop-blur-xl rounded-[2.5rem] p-4 shadow-2xl border border-white/40">
-
-                    <!-- Main Image -->
-
-                    <div
-                        class="swiper-container myHeroSwiper w-[220px] sm:w-[320px] h-auto sm:h-[380px] rounded-2xl overflow-hidden shadow-2xl border border-white/20">
-
-                        <div class="swiper-wrapper">
-
-                            <div class="swiper-slide">
-                                <img src="/images/giftbox.jpg" class="w-full h-full object-cover">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="/images/stationery.jpg" class="w-full h-full object-cover">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="/images/smddosplay.jpg" class="w-full h-full object-cover">
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Floating Small Cards -->
-                <div class="absolute -top-10 -left-10 hidden sm:block w-36 bg-white p-2 rounded-2xl shadow-xl rotate-[-8deg]">
-                    <img src="/images/smddosplay.jpg" class="rounded-xl h-24 w-full object-cover">
-                </div>
-
-                <div class="absolute -bottom-10 -right-10 hidden sm:block w-36 bg-white p-2 rounded-2xl shadow-xl rotate-[8deg]">
-                    <img src="/images/stationery.jpg" class="rounded-xl h-24 w-full object-cover">
-                </div>
-
-            </div>
-
+</section>
+   
+               <!-- Services Section -->
+<section id="services" class="py-16 md:py-24 bg-gray-50 overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12 md:mb-16 px-4">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Our <span class="text-brand-blue">Branding</span> Solutions</h2>
+            <div class="w-20 h-1.5 bg-brand-gold mx-auto rounded-full"></div>
+            <p class="mt-4 md:mt-6 text-gray-500 text-sm md:text-base">Swipe or scroll to explore our premium services</p>
         </div>
-
-        <!-- Glow Effects -->
-        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-blue opacity-10 blur-3xl rounded-full"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-gold opacity-10 blur-3xl rounded-full"></div>
-
-    </section>
-    <!-- Hero Section -->
-
 
 
     <section class="relative py-16 md:py-24 bg-white overflow-hidden">
@@ -705,10 +695,8 @@ bg-gradient-to-br from-[#0a4f86] via-[#005696] to-[#003b66]">
                             </div>
                         </div>
                         <div>
-                            <label class="block text-xs md:text-sm font-semibold text-gray-700 mb-2">Phone
-                                Number</label>
-                            <input type="tel" placeholder="+1 (234) 567-8900"
-                                class="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg md:rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all text-sm">
+                            <label class="block text-xs md:text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" placeholder="03000129663" class="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg md:rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all text-sm">
                         </div>
                         <div>
                             <label class="block text-xs md:text-sm font-semibold text-gray-700 mb-2">Service
